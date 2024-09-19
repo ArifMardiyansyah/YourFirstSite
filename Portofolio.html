@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Arif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            border-radius: 50%;
+            width: 150px; /* Membesarkan foto */
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .header-left div {
+            margin-left: 20px;
+        }
+
+        .header-left h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+
+        .header-left a {
+            display: inline-block;
+            margin-right: 10px; /* Menambah jarak antar tombol */
+            padding: 10px 20px;
+            background-color: #008cba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .header-left a:hover {
+            background-color: #005f73;
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 30px; /* Mengatur posisi lebih ke tengah atas */
+        }
+
+        .header-right p {
+            margin: 5px 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content form input[type="text"],
+        .content form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .content form input[type="submit"] {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content form input[type="submit"]:hover {
+            background-color: #008cba;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <img src="./FY.jpeg" alt="Profile Picture">
+                <div>
+                    <h1>Arif Mardiyansyah</h1>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <p><strong>Availability:</strong> Available</p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>Location:</strong> Indonesia</p>
+                <p><strong>Experience:</strong> 1 years</p>
+                <p><strong>Email:</strong> arifmardiyansyah27@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Submit Your Details</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="role">Role:</label>
+                <input type="text" id="role" name="role">
+
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="availability">
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+
+                <label for="years">Years of Experience:</label>
+                <input type="text" id="years" name="years">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
